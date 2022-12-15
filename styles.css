@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+#nav {
+    border-top: 0.01px solid rgb(192, 190, 190);
+    border-bottom: 0.01px solid rgb(192, 190, 190);
+    display: flex;
+    align-items: center;
+
+}
+
+#nav {
+    padding: 8px;
+}
+
+#nav>img {
+    width: 150px;
+    margin-left: 25px;
+}
+
+#nav>.vl {
+    height: 40px;
+    border-right: 0.1px solid rgb(167, 166, 166);
+    margin-left: 30px;
+}
+
+#Searchbar {
+    display: flex;
+    border: 0.1px solid rgb(167, 166, 166);
+    width: 500px;
+    height: 45px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 4px;
+}
+
+#searchbtn {
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: 0;
+}
+
+#Searchbar>div>img {
+    width: 30px;
+}
+
+#Searchbar>div {
+    display: flex;
+    align-items: center;
+}
+
+#Searchbar>div>input {
+    width: 300px;
+    height: 40px;
+    border: 0;
+}
+
+#nav2 {
+    border-bottom: 0.01px solid rgb(192, 190, 190);
+}
+
+#nav2>div {
+    width: 60%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+}
+
+#categories {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    text-align: center;
+    gap: 50px;
+
+}
+
+#categories img {
+    width: 100%;
+    margin-bottom: 10px;
+    border-bottom: 0.1px solid rgb(211, 209, 209);
+}
+
+#categories p {
+    color: red;
+    font-size: small;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#carousel1 {
+    display: flex;
+    width: 95%;
+    margin: auto;
+    margin-top: 60px;
+    overflow: hidden;
+    align-items: center;
+}
+
+#carousel1>img {
+    width: 40%;
+    border-radius: 15px;
+    margin: 0 10px;
+}
+
+#carousel1>img:nth-child(1) {
+    height: 225px;
+}
+
+.sliderbtn {
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(52, 51, 51);
+}
+
+.forward {
+    right: 30px;
+}
+
+#Labtest>div:nth-child(2) {
+    border: 1px solid green;
+    display: flex;
+}
+/* 
+#Labtest>div:nth-child(1)>img {
+    width: 1px;
+    border: 1px solid yellow;
+}
+
+#Labtest>div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#Labtest>div:nth-child(2)>img {
+    width: 100%;
+    border: 1px solid red;
+} */
