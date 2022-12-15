@@ -12,81 +12,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/84b484b925.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="styles.css">
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
 
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 'Inter', sans-serif;
-        }
-
-        #nav {
-            border-top: 0.01px solid rgb(192, 190, 190);
-            border-bottom: 0.01px solid rgb(192, 190, 190);
-            display: flex;
-            align-items: center;
-
-        }
-
-        #nav {
-            padding: 8px;
-        }
-
-        #nav>img {
-            width: 150px;
-            margin-left: 25px;
-        }
-
-        #nav>.vl {
-            height: 40px;
-            border-right: 0.1px solid rgb(167, 166, 166);
-            margin-left: 30px;
-        }
-
-        #Searchbar {
-            display: flex;
-            border: 0.1px solid rgb(167, 166, 166);
-            width: 500px;
-            height: 45px;
-            border-radius: 30px;
-            align-items: center;
-            justify-content: space-between;
-            padding-right: 4px;
-        }
-
-        #searchbtn {
-            border-radius: 20px;
-            padding: 10px 20px;
-            border: 0;
-        }
-
-        #Searchbar>div>img {
-            width: 30px;
-        }
-        #Searchbar>div{
-            display: flex;
-            align-items: center;
-        }
-        #Searchbar>div>input{
-            width: 300px;
-            height: 40px;
-            border: 0;
-        }
-        #nav2{
-            border-bottom: 0.01px solid rgb(192, 190, 190);
-        }
-        #nav2>div{
-            width: 60%;
-            margin: auto;
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
-            padding: 10px 0px;
-        }
-    </style>
 </head>
 
 <body>
@@ -117,7 +45,7 @@
                 <i class="fa-solid fa-cart-arrow-down"></i>
                 <h5>Cart</h5>
             </div>
-            
+
         </div>
         <div id="nav2">
             <div>
@@ -132,6 +60,85 @@
         </div>
     </nav>
 
-    
+    <div id="categories">
+        <div>
+            <img src="https://assets.pharmeasy.in/apothecary/images/medicine_ff.webp?dim=256x0" alt="">
+            <h4>Medicine</h4>
+            <p>UPTO 20% OFF</p>
+        </div>
+
+        <div>
+            <img src="https://assets.pharmeasy.in/apothecary/images/labtest_ff.webp?dim=256x0" alt="">
+            <h4>Lab Tests</h4>
+            <p>UPTO 70% OFF</p>
+        </div>
+
+        <div>
+            <img src="https://assets.pharmeasy.in/apothecary/images/healthcare_ff.webp?dim=256x0" alt="">
+            <h4>Healthcare</h4>
+            <p>UPTO 60% OFF</p>
+        </div>
+
+        <div>
+            <img src="https://assets.pharmeasy.in/apothecary/images/offers_1_ff.webp?dim=256x0" alt="">
+            <h4>Surgeries</h4>
+        </div>
+
+        <div>
+            <img src="https://assets.pharmeasy.in/apothecary/images/health_blogs_ff.webp?dim=256x0" alt="">
+            <h4>Health Blogs</h4>
+        </div>
+
+        <div>
+            <img src="https://assets.pharmeasy.in/apothecary/images/plus_ff.webp?dim=256x0" alt="">
+            <h4>PLUS</h4>
+            <p>Save 5% Extra</p>
+        </div>
+
+        <div>
+            <img src="https://assets.pharmeasy.in/apothecary/images/offers_ff.webp?dim=256x0" alt="">
+            <h4>Offers</h4>
+        </div>
+
+        <div>
+            <img src="https://assets.pharmeasy.in/apothecary/images/value_store.png?dim=256x0" alt="">
+            <h4>Value Store</h4>
+            <p>UPTO 50% OFF</p>
+        </div>
+
+    </div>
+
+    <div id="carousel1">
+        <img src="Img\bn1.jpg" alt="">
+        <img src="https://cdn01.pharmeasy.in/dam/banner/banner/4c20bc959c9-ML30.jpg" alt="Img\bn1.jpg">
+        <img src="https://cdn01.pharmeasy.in/dam/banner/banner/4a92abd3133-yayy550_bau.jpg" alt="Img\bn1.jpg">
+        <img src="https://cdn01.pharmeasy.in/dam/banner/banner/048facc8065-634x274a.jpg" alt="">
+        <img src="https://cdn01.pharmeasy.in/dam/banner/banner/b31ed8123b6-CP.jpg" alt="">
+        <img src="https://cdn01.pharmeasy.in/dam/banner/banner/1ef60ed33e9-VicksWinterBannerfinal.jpg" alt="">
+
+        <button class="sliderbtn forward" id="fbtn1"><i class="fa-solid fa-chevron-right fa-2x "style="color:white"></i></button>
+        <button class="sliderbtn backward" id="bbtn1"><i class="fa-solid fa-chevron-left fa-2x"style="color:white"></i></button>
+    </div>
+
+    <div id="Labtest">
+        <h2>Lab Tests by Health Concern</h2>
+        <div id="Thyrocare">
+            <p>Powered by</p>
+            <img src="https://assets.pharmeasy.in/apothecary/images/Thyrocare.webp?dim=1440x0" alt="">
+        </div>
+        <div id="test">
+            <img src="Img/Lab Test/1.jpg" alt="">
+            <img src="Img/Lab Test/LB2.jpg" alt="">
+            <img src="Img/Lab Test/LB3.jpg" alt="">
+            <img src="Img/Lab Test/LB4.png" alt="">
+            <img src="Img/Lab Test/LB5.jpg" alt="">
+            <img src="Img/Lab Test/LB6.jpg" alt="">
+            <img src="Img/Lab Test/LB7.jpg" alt="">
+            <img src="Img/Lab Test/LB8.jpg" alt="">
+            <img src="Img/Lab Test/LB9.jpg" alt="">
+        </div>
+    </div>
 </body>
+
+    <script src="script.js"></script>
 </html>
