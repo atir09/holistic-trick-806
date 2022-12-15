@@ -10,8 +10,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/84b484b925.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
-
+    
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
@@ -44,6 +45,47 @@
             border-right: 0.1px solid rgb(167, 166, 166);
             margin-left: 30px;
         }
+
+        #Searchbar {
+            display: flex;
+            border: 0.1px solid rgb(167, 166, 166);
+            width: 500px;
+            height: 45px;
+            border-radius: 30px;
+            align-items: center;
+            justify-content: space-between;
+            padding-right: 4px;
+        }
+
+        #searchbtn {
+            border-radius: 20px;
+            padding: 10px 20px;
+            border: 0;
+        }
+
+        #Searchbar>div>img {
+            width: 30px;
+        }
+        #Searchbar>div{
+            display: flex;
+            align-items: center;
+        }
+        #Searchbar>div>input{
+            width: 300px;
+            height: 40px;
+            border: 0;
+        }
+        #nav2{
+            border-bottom: 0.01px solid rgb(192, 190, 190);
+        }
+        #nav2>div{
+            width: 60%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 10px 0px;
+        }
     </style>
 </head>
 
@@ -52,12 +94,44 @@
         <div id="nav">
             <img src="Img\Formula Drugs Logo.gif" alt="">
             <div class="vl"></div>
-            <div >
+            <div>
                 <p>Delivery to</p>
                 <h4>Select Pincode</h4>
             </div>
+            <div id="Searchbar">
+                <div>
+                    <img id="searchbtn" src="Img\iconmonstr-search-thin-48.png" alt="">
+                    <input type="text" placeholder="Search for">
+                </div>
+                <button id="searchbtn">Search</button>
+            </div>
+            <div>
+                <i class="fa-regular fa-user"></i>
+                <h5>Login</h5>
+            </div>
+            <div>
+                <i class="fa-solid fa-percent"></i>
+                <h5>Offer</h5>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-arrow-down"></i>
+                <h5>Cart</h5>
+            </div>
+            
+        </div>
+        <div id="nav2">
+            <div>
+                <h5>Medicine</h5>
+                <h5>Lab Tests</h5>
+                <h5>Health Care</h5>
+                <h5>Surgeries</h5>
+                <h5>Health Blogs</h5>
+                <h5>Health Blogs</h5>
+                <h5>Value Store</h5>
+            </div>
         </div>
     </nav>
-</body>
 
+    
+</body>
 </html>
