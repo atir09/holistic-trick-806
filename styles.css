@@ -5,6 +5,16 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
 }
+button{
+    cursor: pointer;
+}
+.bold {
+    font-weight: bold;
+}
+
+.bolder {
+    font-weight: bolder;
+}
 
 #nav {
     border-top: 0.01px solid rgb(192, 190, 190);
@@ -122,31 +132,280 @@
     border-radius: 30px;
     border: none;
     background-color: rgb(52, 51, 51);
+    cursor: pointer;
 }
 
 .forward {
     right: 30px;
 }
 
-#Labtest>div:nth-child(2) {
-    border: 1px solid green;
-    display: flex;
-}
-/* 
-#Labtest>div:nth-child(1)>img {
-    width: 1px;
-    border: 1px solid yellow;
+#Labtest {
+    margin: auto;
+    width: 95%;
+    margin-top: 70px;
 }
 
-#Labtest>div:nth-child(2) {
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    gap: 10px;
-    justify-content: space-around;
+#Thyrocare {
+    border: 1px solid green;
+    margin-top: 10px;
+    display: flex;
+}
+
+#Thyrocare>img {
+    width: 100px;
+}
+
+#test {
+    display: flex;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+#test>img {
+    height: 100%;
+    margin-right: 20px;
+}
+
+#offer {
+    width: 95%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+#offer>div {
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    height: 80px;
+}
+
+#offer>div>div {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 0.1px solid #adadad;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+#offer>div>div>img {
+    width: 50px;
+    border-radius: 5px;
+    margin-right: 20px;
+
+}
+
+.flex {
+    display: flex;
+}
+
+#paymentoffer {
+    width: 95%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+#pacarousel {
+    display: flex;
+    margin-top: 30px;
+    overflow: hidden;
     align-items: center;
 }
 
-#Labtest>div:nth-child(2)>img {
-    width: 100%;
+#pacarousel>img {
+    width: 35%;
+    border-radius: 15px;
+    margin: 0 10px;
+}
+
+#presBox {
+    width: 95%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+.block {
+    display: block;
+}
+
+#presBox>div:nth-child(1) {
+    width: 45%;
+    background-color:powderblue;
+    padding: 30px;
+
+}
+
+#presBox>div:nth-child(1)>div:nth-child(2){
+    margin-left: 30px;
+}
+#presBox>div:nth-child(1)>div:nth-child(2) button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color: #10847E;
+    margin-top: 5px;
+    color: white;
+}
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+#presBox>div:nth-child(2) {
+    width: 55%;
+    padding: 10px;
+    background-color:floralwhite;
+}
+
+#presBox>div:nth-child(2)>h4 {
+    margin-left: 50px  00px;
+}
+
+#presBox>div:nth-child(2)>div {
+    margin-top: 20px;
+}
+
+#presBox>div:nth-child(2)>div>div {
+    margin-left: 10px;
+}
+
+#presBox>div:nth-child(2)>div button{
+    padding: 5px 10px ;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border: none;
+    background-color: rgb(81, 176, 144);
+    border-radius: 5px;
+
+}
+
+/* Shop by Category */
+#ShopByCat{
+    width: 95%;
+    margin: auto;
+    margin-top: 70px;
+}
+
+#ShopByCat>div{
+    display: flex;
+    overflow: hidden;
+}
+
+#ShopByCat>div>div>div{
+    display: flex;
     border: 1px solid red;
-} */
+    width: 150px;
+    height: 180px;
+    border: 0.1px solid #adadad;
+    border-radius: 10px;
+    margin-right: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#ShopByCat>div>div>div>img{
+    width: 80%;
+}
+
+
+#ShopByCat>div>div h4{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#Cat-fbtn1{
+    position: relative;
+    padding: 5px 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(52, 51, 51);
+    cursor: pointer;
+    bottom: 170px;
+   left: 94%;
+}
+#Cat-bbtn1{
+    position: relative;
+    padding: 5px 10px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgb(52, 51, 51);
+    cursor: pointer;
+    bottom: 170px;
+}
+
+#plusMem{
+    cursor: pointer;
+    width: 100%;
+}
+
+#ShopByConcern{
+    width: 95%;
+    margin: auto;
+}
+
+#ShopByConcern>h2{
+    margin-top: 70px;
+    margin-bottom: 20px;
+
+}
+
+#ShopByConcern>div{
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    text-align: center;
+    gap: 40px;
+    margin-top:30px ;
+}
+
+#ShopByConcern>div>div>img{
+    width: 100%;
+    cursor: pointer;
+}
+
+#WCU{
+    margin-top: 70px;
+    width: 100%;
+}
+
+#AppBanner{
+    margin-top: 70px;
+    cursor: pointer;
+    width: 100%;
+    margin: auto;
+}
+footer{
+    margin-top: 70px;
+    padding: 50px 30px;
+    background-color: #F2FFF8;
+
+}
+footer>div>div{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 15px;
+    width: 75%;
+}
+footer>div>div>p{
+    font-size: 15px;
+}
+
+footer>div>div:nth-child(2){
+    width: 30%;   
+}
+footer>h3{
+    margin-top: 50px;
+}
+#Payapp{
+ display: grid;
+ grid-template-columns: repeat(15,1fr);
+ text-align: center;
+ align-items: center;
+}
+#Payapp>img{
+    margin-top: 30px;
+    width: 40%;
+}
