@@ -22,9 +22,9 @@
         <div id="nav">
             <img src="Img\Formula Drugs Logo.gif" alt="">
             <div class="vl"></div>
-            <div>
-                <p>Delivery to</p>
-                <h4>Select Pincode</h4>
+            <div class="pointer" id="address">
+                <p>Delivery to </p>
+                <h4>Select Pincode v </h4>
             </div>
             <div id="Searchbar">
                 <div>
@@ -33,15 +33,15 @@
                 </div>
                 <button id="searchbtn">Search</button>
             </div>
-            <div>
+            <div id="login" class="pointer" onclick="openlogin()">
                 <i class="fa-regular fa-user"></i>
-                <h5>Login</h5>
+                <h5 id="loginid">Login</h5>
             </div>
-            <div>
+            <div id="offericon" class="pointer">
                 <i class="fa-solid fa-percent"></i>
                 <h5>Offer</h5>
             </div>
-            <div>
+            <div id="carticon" class="pointer">
                 <i class="fa-solid fa-cart-arrow-down"></i>
                 <h5>Cart</h5>
             </div>
@@ -354,7 +354,7 @@
     <img id="WCU" src="Img/WCU.jpg" alt="">
     <img id="AppBanner" src="Img/Download app banner.jpg" alt="">
 
-    <footer >
+    <footer>
         <div class="flex">
             <div>
                 <h3>Company</h3>
@@ -420,7 +420,23 @@
     </footer>
 
 
-
+    <div id="loginslide">
+        <img src="Img/login top.jpg" alt="">
+        <a href="javascript:void(0)" id="loginclosebtn" onclick="closelogin()">&times;</a>
+        <div class="flex">
+            <h3 id="login" onclick="Switchlogin()">Quick Login /</h3>
+            <h3 id="Register" onclick="SwitchRegister()">Register</h3>
+        </div>
+        <div id="belowimg">
+            <input type="text" placeholder="First Name" id="firstname">
+            <input type="text" placeholder="Last Name" id="lastname">
+            <input type="number" id="phone" placeholder="Enter your Phone Number">
+            <input type="text" id="pass" placeholder="Enter Your Password">
+            <button id="loginbtn" onclick="login()">Log In</button>
+            <button id="register" onclick="RegisterNew()">Register</button>
+            <h2 id="result"></h2>
+            <p>By clicking continue, you agree with our <span style="color:darkcyan ;">Privacy Policy</span></p>
+        </div>
 
 </body>
 
