@@ -5,15 +5,21 @@
     padding: 0;
     font-family: 'Inter', sans-serif;
 }
-button{
+
+button {
     cursor: pointer;
 }
+
 .bold {
     font-weight: bold;
 }
 
 .bolder {
     font-weight: bolder;
+}
+
+nav {
+    position: sticky;
 }
 
 #nav {
@@ -48,6 +54,11 @@ button{
     align-items: center;
     justify-content: space-between;
     padding-right: 4px;
+    margin-left: 120px;
+}
+
+#address {
+    margin-left: 30px;
 }
 
 #searchbtn {
@@ -60,6 +71,10 @@ button{
     width: 30px;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 #Searchbar>div {
     display: flex;
     align-items: center;
@@ -70,6 +85,43 @@ button{
     height: 40px;
     border: 0;
 }
+
+#Searchbar>div>input:focus {
+    outline: none;
+}
+
+#login {
+    margin-left: 70px;
+    text-align: center;
+}
+
+#login>h5 {
+    display: inline-block;
+    margin-left: 7px;
+
+}
+
+#offericon {
+    margin-left: 30px;
+    text-align: center;
+}
+
+#offericon>h5 {
+    display: inline-block;
+    margin-left: 7px;
+
+}
+
+#carticon {
+    margin-left: 30px;
+    text-align: center;
+}
+
+#carticon>h5 {
+    margin-left: 7px;
+    display: inline-block;
+}
+
 
 #nav2 {
     border-bottom: 0.01px solid rgb(192, 190, 190);
@@ -146,7 +198,6 @@ button{
 }
 
 #Thyrocare {
-    border: 1px solid green;
     margin-top: 10px;
     display: flex;
 }
@@ -232,15 +283,16 @@ button{
 
 #presBox>div:nth-child(1) {
     width: 45%;
-    background-color:powderblue;
+    background-color: powderblue;
     padding: 30px;
 
 }
 
-#presBox>div:nth-child(1)>div:nth-child(2){
+#presBox>div:nth-child(1)>div:nth-child(2) {
     margin-left: 30px;
 }
-#presBox>div:nth-child(1)>div:nth-child(2) button{
+
+#presBox>div:nth-child(1)>div:nth-child(2) button {
     padding: 10px 20px;
     border-radius: 5px;
     border: none;
@@ -248,6 +300,7 @@ button{
     margin-top: 5px;
     color: white;
 }
+
 .flex-col {
     display: flex;
     flex-direction: column;
@@ -256,11 +309,11 @@ button{
 #presBox>div:nth-child(2) {
     width: 55%;
     padding: 10px;
-    background-color:floralwhite;
+    background-color: floralwhite;
 }
 
 #presBox>div:nth-child(2)>h4 {
-    margin-left: 50px  00px;
+    margin-left: 50px 00px;
 }
 
 #presBox>div:nth-child(2)>div {
@@ -271,8 +324,8 @@ button{
     margin-left: 10px;
 }
 
-#presBox>div:nth-child(2)>div button{
-    padding: 5px 10px ;
+#presBox>div:nth-child(2)>div button {
+    padding: 5px 10px;
     margin-bottom: 10px;
     margin-right: 10px;
     border: none;
@@ -282,18 +335,18 @@ button{
 }
 
 /* Shop by Category */
-#ShopByCat{
+#ShopByCat {
     width: 95%;
     margin: auto;
     margin-top: 70px;
 }
 
-#ShopByCat>div{
+#ShopByCat>div {
     display: flex;
     overflow: hidden;
 }
 
-#ShopByCat>div>div>div{
+#ShopByCat>div>div>div {
     display: flex;
     border: 1px solid red;
     width: 150px;
@@ -307,17 +360,17 @@ button{
     cursor: pointer;
 }
 
-#ShopByCat>div>div>div>img{
+#ShopByCat>div>div>div>img {
     width: 80%;
 }
 
 
-#ShopByCat>div>div h4{
+#ShopByCat>div>div h4 {
     text-align: center;
     margin-top: 20px;
 }
 
-#Cat-fbtn1{
+#Cat-fbtn1 {
     position: relative;
     padding: 5px 10px;
     border-radius: 30px;
@@ -325,9 +378,10 @@ button{
     background-color: rgb(52, 51, 51);
     cursor: pointer;
     bottom: 170px;
-   left: 94%;
+    left: 94%;
 }
-#Cat-bbtn1{
+
+#Cat-bbtn1 {
     position: relative;
     padding: 5px 10px;
     border-radius: 30px;
@@ -337,75 +391,228 @@ button{
     bottom: 170px;
 }
 
-#plusMem{
+#plusMem {
     cursor: pointer;
     width: 100%;
 }
 
-#ShopByConcern{
+#ShopByConcern {
     width: 95%;
     margin: auto;
 }
 
-#ShopByConcern>h2{
+#ShopByConcern>h2 {
     margin-top: 70px;
     margin-bottom: 20px;
 
 }
 
-#ShopByConcern>div{
+#ShopByConcern>div {
     display: grid;
-    grid-template-columns: repeat(8,1fr);
+    grid-template-columns: repeat(8, 1fr);
     text-align: center;
     gap: 40px;
-    margin-top:30px ;
+    margin-top: 30px;
 }
 
-#ShopByConcern>div>div>img{
+#ShopByConcern>div>div>img {
     width: 100%;
     cursor: pointer;
 }
 
-#WCU{
+#WCU {
     margin-top: 70px;
     width: 100%;
 }
 
-#AppBanner{
+#AppBanner {
     margin-top: 70px;
     cursor: pointer;
     width: 100%;
     margin: auto;
 }
-footer{
+
+footer {
     margin-top: 70px;
     padding: 50px 30px;
     background-color: #F2FFF8;
 
 }
-footer>div>div{
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
+
+footer>div>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 15px;
     width: 75%;
 }
-footer>div>div>p{
+
+footer>div>div>p {
     font-size: 15px;
 }
 
-footer>div>div:nth-child(2){
-    width: 30%;   
+footer>div>div:nth-child(2) {
+    width: 30%;
 }
-footer>h3{
+
+footer>h3 {
     margin-top: 50px;
 }
-#Payapp{
- display: grid;
- grid-template-columns: repeat(15,1fr);
- text-align: center;
- align-items: center;
+
+#Payapp {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    text-align: center;
+    align-items: center;
 }
-#Payapp>img{
+
+#Payapp>img {
     margin-top: 30px;
     width: 40%;
+}
+
+.flex {
+    display: flex;
+}
+
+input,
+button {
+    display: block;
+}
+
+
+/* Input Slider */
+
+
+input:focus {
+    outline: 0;
+}
+
+#login {
+    cursor: pointer;
+}
+
+#Register {
+    cursor: pointer;
+
+}
+
+#loginslide {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+#loginslide>div{
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+#result {
+    display: none;
+}
+
+#loginclosebtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 36px;
+    color: #F2FFF8;
+    text-decoration: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#firstname,#lastname{
+    display: none;
+}
+
+#register{
+    display: none;
+}
+#belowimg{
+    padding: 10px 40px 10px 40px;
+}
+
+#firstname{
+    width: 280px;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: auto;
+    border: 1px solid #8897A2;
+    margin-bottom: 20px;
+    
+}
+input:focus{
+    outline: none;
+}
+
+#lastname{
+    width: 280px;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: auto;
+    border: 1px solid #8897A2;
+    margin-bottom: 20px;
+}
+
+#phone{
+    width: 280px;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: auto;
+    border: 1px solid #8897A2;
+    margin-bottom: 20px;
+}
+
+#pass{
+    width: 280px;
+    height: 30px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    margin: auto;
+    border: 1px solid #8897A2;
+    margin-bottom: 20px;
+}
+
+#loginbtn{
+    background-color: #10847E;
+    width: 320px;
+    height: 30px;
+    padding: 20px 50px 30px 50px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    border: none;
+    text-align: center;
+    align-items: center;
+    color: #F2FFF8;
+
+}
+#register{
+    background-color: #10847E;
+    width: 320px;
+    height: 30px;
+    padding: 20px 50px 30px 50px;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    border: none;
+    text-align: center;
+    align-items: center;
+    color: #F2FFF8;
+}
+#result{
+margin-bottom: 20px;
 }
