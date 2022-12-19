@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula Drugs-Cart</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="https://kit.fontawesome.com/84b484b925.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav>
+        <div id="nav">
+            <img src="Img\Formula Drugs Logo.gif" alt="">
+            <div class="vl"></div>
+            <div class="pointer" id="address">
+                <p>Delivery to </p>
+                <h4>Select Pincode v </h4>
+            </div>
+            <div id="Searchbar">
+                <div>
+                    <img id="searchbtn" src="Img\iconmonstr-search-thin-48.png" alt="">
+                    <input type="text" placeholder="Search for">
+                </div>
+                <button id="searchbtn">Search</button>
+            </div>
+            <div id="login" class="pointer" onclick="openlogin()">
+                <i class="fa-regular fa-user"></i>
+                <h5 id="loginid">Login</h5>
+            </div>
+            <div id="offericon" class="pointer">
+                <i class="fa-solid fa-percent"></i>
+                <h5>Offer</h5>
+            </div>
+            <div id="carticon" class="pointer" >
+                <i class="fa-solid fa-cart-arrow-down" style="position: relative;"><div id="circle">
+                    <p id="cv"></p>
+                    </div></i>
+                <a href="cart.html"><h5>Cart</h5></a>
+                
+            </div>
+
+        </div>
+        <div id="nav2">
+            <div>
+                <h5>Medicine</h5>
+                <h5>Lab Tests</h5>
+                <h5>Health Care</h5>
+                <h5>Surgeries</h5>
+                <h5>Health Blogs</h5>
+                <h5>Health Blogs</h5>
+                <h5>Value Store</h5>
+            </div>
+        </div>
+    </nav>
+
+    <section style="width: 80%;margin: auto;">
+        <div class="flex" id="navcontrol">
+            <a href="index.html">
+                <p>Home</p>
+            </a>
+            <i class="fa-solid fa-chevron-right  "></i>
+            <p>Cart</p>
+        </div>
+
+
+        <div id="display">
+            <h2><span id="num">Items in Your Cart</span></h2>
+        </div>
+        <div class="flex" style="justify-content: space-around;">
+            <div id="displayarea">
+            
+            </div>
+    
+            <div id="bill" >
+                <h3 style="border-bottom: 1px solid rgb(192, 190, 190);padding: 20px; margin-bottom: 20px;">Cart Total: <span id="cost"></span></h3>
+                <h3 style="margin-left: 30px; margin-bottom: 20px;">Payment Options:</h3>
+                <input type="radio" name="" id="" style="margin-left: 30px;"><label for="" style="font-size: 20px; margin-left: 20px;">Cash on Delivery</label>
+                <img class="pointer" src="Img/coupon.jpg" alt="">
+                <button id="buy" onclick="OpenPopup()">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="popup" id="popup">
+        <img src="https://www.pngall.com/wp-content/uploads/9/Green-Tick-Vector-PNG-Images.png" alt="">
+        <h3>Thank You!</h3>
+        <h3>Your Order Has been Successfully Placed.</h3>
+        <button onclick="ClosePopup()">OK</button>
+    </div>
+</body>
+<script src="cart.js"></script>
+</html>
