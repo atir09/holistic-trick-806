@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formula Drugs-Products</title>
+    <script src="https://kit.fontawesome.com/84b484b925.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="products.css">
+</head>
+
+<body>
+    <nav>
+        <div id="nav">
+            <img src="Img\Formula Drugs Logo.gif" alt="">
+            <div class="vl"></div>
+            <div class="pointer" id="address">
+                <p>Delivery to </p>
+                <h4>Select Pincode v </h4>
+            </div>
+            <div id="Searchbar">
+                <div>
+                    <img id="searchbtn" src="Img\iconmonstr-search-thin-48.png" alt="">
+                    <input type="text" placeholder="Search for">
+                </div>
+                <button id="searchbtn">Search</button>
+            </div>
+            <div id="login" class="pointer" onclick="openlogin()">
+                <i class="fa-regular fa-user"></i>
+                <h5 id="loginid">Login</h5>
+            </div>
+            <div id="offericon" class="pointer">
+                <i class="fa-solid fa-percent"></i>
+                <h5>Offer</h5>
+            </div>
+            <div id="carticon" class="pointer" >
+                <i class="fa-solid fa-cart-arrow-down" style="position: relative;"><div id="circle">
+                    <p id="cv"></p>
+                    </div></i>
+                <a href="cart.html"><h5>Cart</h5></a>
+                
+            </div>
+
+        </div>
+        <div id="nav2">
+            <div>
+                <h5>Medicine</h5>
+                <h5>Lab Tests</h5>
+                <h5>Health Care</h5>
+                <h5>Surgeries</h5>
+                <h5>Health Blogs</h5>
+                <h5>Health Blogs</h5>
+                <h5>Value Store</h5>
+            </div>
+        </div>
+    </nav>
+
+
+    <section style="padding: 10px 150px;">
+        <div class="flex" id="navcontrol">
+            <a href="index.html">
+                <p>Home</p>
+            </a>
+            <i class="fa-solid fa-chevron-right  "></i>
+            <p>Personal Care Products</p>
+        </div>
+
+
+        <section class="flex" style="justify-content: space-between; margin-top: 30px;">
+            <div id="filtersection">
+                <p style="font-size: 25px;margin-bottom: 40px;">Filter</p>
+                <hr style="margin-bottom: 30px;">
+                <p style="font-size: 18px;margin-bottom: 30px;" class="bold">Category</p>
+
+                <form action="" id="Category">
+                    <div class="flex" style="justify-content: space-between; width: 90%; margin-bottom: 20px; ">
+                        <label for="Men">Men Care</label>
+                        <input type="radio" id="Men" name="Category" value="Men">
+                    </div>
+                    <div class="flex" style="justify-content: space-between; width: 90%;margin-bottom: 20px;">
+                        <label for="Women">Women Care</label>
+                        <input type="radio" id="Women" name="Category" value="Women">
+                    </div>
+                    <div class="flex" style="justify-content: space-between; width: 90%;margin-bottom: 20px;">
+                        <label for="Appliances">Appliances</label>
+                        <input type="radio" id="Appliances" name="Category" value="Appliances">
+                    </div>
+                    <div class="flex" style="justify-content: space-between; width: 90%;margin-bottom: 20px;">
+                        <label for="Oral Care">Oral Care</label>
+                        <input type="radio" id="Oral" name="Category" value="Oral Care">
+                    </div>
+                </form>
+
+            </div>
+
+            <div id="displayarea">
+
+            </div>
+        </section>
+    </section>
+
+</body>
+<script src="products.js"></script>
+
+</html>
