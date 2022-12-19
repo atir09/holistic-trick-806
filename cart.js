@@ -2,7 +2,8 @@ cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
 let total=document.getElementById("cost")
 userdata = JSON.parse(localStorage.getItem("userdata")) || [];
 document.getElementById("loginid").innerText = userdata[userdata.length - 1].fname
-
+let cv = document.getElementById("cv")
+cv.innerText = cartdata.length
 
 Display(cartdata)
 
@@ -15,6 +16,8 @@ function Display(cartdata) {
         card.style.padding = "15px"
         card.style.border = "1px solid rgb(192, 190, 190)"
         card.style.borderRadius = "10px"
+        card.style.marginBottom="20px"
+
 
         let space = document.createElement("div")
         space.style.height = "150px";

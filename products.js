@@ -2,19 +2,23 @@ userdata = JSON.parse(localStorage.getItem("userdata")) || [];
 document.getElementById("loginid").innerText = userdata[userdata.length - 1].fname
 let productdata = []
 cartdata = JSON.parse(localStorage.getItem("cartdata")) || [];
-let cv= document.getElementById("cv")
-cv.innerText=cartdata.length
+let cv = document.getElementById("cv")
+cv.innerText = cartdata.length
+let filter = document.getElementsByName("Category")
 
-// let categorysel = document.getElementsByName("Category")
-// let Category = document.getElementsByName("Category")
 
-// console.log(categorysel)
-// console.log(Category)
-// Category.forEach((el) => {
-//     if (el.checked) {
-//         console.log(el.value)
-//     }
-// })
+filter.forEach((e) => {
+    e.addEventListener("click", () => {
+        filtered = productdata.filter((el) => {
+            if (el.type == e.value) {
+                return true
+            }
+        })
+        Display(filtered)
+    })
+})
+
+
 
 
 
@@ -30,7 +34,6 @@ function fetchdata() {
         .then((data) => {
             productdata = data
             Display(productdata)
-            console.log(data)
         })
 }
 
@@ -63,28 +66,42 @@ function Display(data) {
         let price = document.createElement("h5");
         price.innerText = "MRP RS." + element.price
 
+        let block = document.createElement("div")
+
+
         let ATC = document.createElement("button");
         ATC.setAttribute("id", "Atc")
         ATC.innerText = "Add To Cart"
+
+
+
+
         ATC.addEventListener("click", () => {
             if (cartdata.includes(element) == false) {
                 cartdata.push(element)
-                cv.innerText=cartdata.length
+                cv.innerText = cartdata.length
                 localStorage.setItem("cartdata", JSON.stringify(cartdata))
+
+                
             }
 
         })
 
 
 
+
+
+
         space.append(img)
-        card.append(space, name, price, ATC)
+        block.append(ATC)
+        card.append(space, name, price, block)
         cont.append(card)
     });
 
 
 
 }
+
 
 
 

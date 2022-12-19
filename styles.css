@@ -40,6 +40,7 @@ nav {
 
 #nav {
     padding: 8px;
+    margin-bottom: 10px;
 }
 
 #nav>img {
@@ -124,15 +125,32 @@ nav {
     margin-left: 30px;
     text-align: center;
 }
-
-#carticon>h5 {
+a{
+    text-decoration: none;
+}
+#carticon h5 {
     margin-left: 7px;
     display: inline-block;
+    margin-left: 10px;
 }
-
+#circle{
+    width: 15px;;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+#cv{
+    font-size: 12px;
+    color: white;
+}
 
 #nav2 {
     border-bottom: 0.01px solid rgb(192, 190, 190);
+    margin-bottom: 30px;
 }
 
 #nav2>div {
@@ -143,7 +161,9 @@ nav {
     justify-content: space-around;
     padding: 10px 0px;
 }
-
+#nav2>div>h5{
+    cursor: pointer;
+}
 #categories {
     width: 90%;
     margin: auto;
@@ -166,7 +186,10 @@ nav {
     margin-top: 10px;
     font-weight: bold;
 }
+#categories a{
 
+    text-decoration: none;
+}
 #carousel1 {
     display: flex;
     width: 95%;
@@ -349,14 +372,13 @@ nav {
     margin-top: 70px;
 }
 
-#ShopByCat>div {
+#od {
     display: flex;
     overflow: hidden;
 }
 
-#ShopByCat>div>div>div {
+#od2 {
     display: flex;
-    border: 1px solid red;
     width: 150px;
     height: 180px;
     border: 0.1px solid #adadad;
@@ -368,12 +390,12 @@ nav {
     cursor: pointer;
 }
 
-#ShopByCat>div>div>div>img {
+#od2 img {
     width: 80%;
 }
 
 
-#ShopByCat>div>div h4 {
+#ShopByCat h4 {
     text-align: center;
     margin-top: 20px;
 }
@@ -385,8 +407,8 @@ nav {
     border: none;
     background-color: rgb(52, 51, 51);
     cursor: pointer;
-    bottom: 170px;
-    left: 94%;
+    bottom: 200px;
+    left: 97%;
 }
 
 #Cat-bbtn1 {
