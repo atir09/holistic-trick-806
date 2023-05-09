@@ -1,2 +1,1 @@
-# holistic-trick-806
-PharmEasy Clone
+PharmEasy is an online pharmacy and healthcare platform that allows users to purchase medicines, health products, and diagnostic tests online. This website is a clone of PharmEasy and provides a user-friendly interface that allows users to easily search for and purchase medicines based on their prescription or health condition.
